@@ -1,3 +1,4 @@
+[![Action custom test - marketplace](https://github.com/shanti91/action-market-exam/actions/workflows/test.yml/badge.svg)](https://github.com/shanti91/action-market-exam/actions/workflows/test.yml)
 # github-action-template
 Simple Typescript GitHub Action Start Template
 
