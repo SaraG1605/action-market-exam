@@ -14,10 +14,15 @@ jobs:
     - uses: actions/checkout@v1
     - name: run action
       id: run_action
-      if: ${{ my_input == 'World'}}
+      #if: ${{ my_input == 'World'}}
       uses: ./
       with: 
         my_input: 'World'
 
     - name: log action output
-      run: echo ${{steps.run_action.outputs.my_output}}     
+      run: echo ${{steps.run_action.outputs.my_output}}  
+      
+    - name: test echo debug errors
+      run: echo "::debug::Debug msg"
+    - run: echo "::error::Error msg"
+    - run: echo "::warning::warning error"
