@@ -3,6 +3,8 @@ on: # rebuild any PRs and main branch changes
   workflow_dispatch: 
   pull_request:
   push:
+    paths-ignore:
+      - 'README.md'
     branches:
       - master
       - 'releases2/*'
@@ -24,5 +26,7 @@ jobs:
       
     - name: test echo debug errors
       run: echo "::debug::Debug msg"
-    - run: echo "::error::Error msg"
-    - run: echo "::warning::warning error"
+    - name: test error type debug
+      run: echo "::error::Error msg"
+    - name: Test warning msg echo
+      run: echo "::warning::warning error"
