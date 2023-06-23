@@ -1,6 +1,6 @@
-name: 'Github Action Template'
+name: 'Github Action test publich action custom'
 description: 'simple typescript template for building GitHub Actions'
-author: 'notiz.dev'
+author: 'Sara'
 inputs:
   my_input:
     description: 'input description here'
@@ -9,5 +9,5 @@ runs:
   using: 'node12'
   main: 'dist/index.js'
 branding:
-  color: "yellow"
+  color: "green"
   icon: "bell"  
